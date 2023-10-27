@@ -1,0 +1,9 @@
+version: "2"
+services:
+  pspack-flask:
+    build: .
+    image: pspack-flask
+    container_name: pspack-flask
+    ports:
+      - 1337:1337
+    restart: unless-stopped
